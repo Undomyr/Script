@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dealer Cards -->
+  <div id="deal-wrap">
+
+    <!-- Dealer Points and Stand -->
+    <div id="deal-data">
+      <span id="deal-stand">STAND</span>
+      Dealer's Hand - <span id="deal-points">?</span>
+    </div>
+
+    <!-- Dealer's Cards -->
+    <div id="deal-cards"></div>
+  </div>
+
+  <!-- Player Cards -->
+  <div id="play-wrap">
+
+    <!-- Player's Points and Stand -->
+    <div id="play-data">
+      <span id="play-stand">STAND</span>
+      Jouw Hand - <span id="play-points">0</span>
+    </div>
+
+    <!-- Player's Cards -->
+    <div id="play-cards"></div>
+  </div>
+
+  <!-- PLAY -->
+  <div id="play-control">
+
+    <!-- Start -->
+    <input type="button" id="playc-start" value="Speel!"/>
+
+    <!-- Delen of Pas -->
+    <input type="button" id="playc-hit" value="Delen"/>
+    <input type="button" id="playc-stand" value="Pas"/>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>

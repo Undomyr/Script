@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mastermind</h1>
+
+  <div id="mainpage">
+    <nav>
+      <input type="button" value="Start Spel" onclick="newgame()">
+      <br>
+      <fieldset id="colorrow">
+        <p>Click</p>
+        <button id="orange" value="0" onclick="setcolor('orange', 'p1')"></button>
+        <button id="blue" value="1" onclick="setcolor('blue', 'p2')"></button>
+        <button id="yellow" value="2" onclick="setcolor('yellow', 'p3')"></button>
+        <button id="green" value="3" onclick="setcolor('green', 'p4')"></button>
+        <button id="purple" value="4" onclick="setcolor('purple', 'p5')"></button>
+        <button id="black" value="5" onclick="setcolor('black', 'p6')"></button>
+      </fieldset>
+    </nav>
+
+    <article>
+      <div id="first">
+        <fieldset id="code1"></fieldset>
+        <fieldset id="code2"></fieldset>
+        <fieldset id="code3"></fieldset>
+        <fieldset id="code4"></fieldset>
+      </div>
+    </article>
+
+    <aside>
+      <header>
+        Raad de 4 kleuren
+        <br />
+        Je kan uit 6 kleuren kiezen
+        <br />
+        Je hebt 12 pogingen om de code te raden
+        <br />
+        Correct geplaatste pinnen hebben een groene cirkel
+        <br />
+        Pinnen die in de code voorkomen maar op een andere plek hebben een rode cirkel
+        <br />
+        Pinnen met zwarte cirkel komen niet in de code voor
+      </header>
+    </aside>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
